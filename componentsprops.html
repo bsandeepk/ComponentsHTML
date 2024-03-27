@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        const Welcome = (props) => {
+          const {name,greeting} =props
+          return (<h1 className="greeting">{greeting} {name}</h1>)
+        }
+        ReactDOM.render(<Welcome name="Sandeep" greeting="Hai, How are you?"/>,document.getElementById("root"));
+    </script>
+    </body>
+    
+</html>
